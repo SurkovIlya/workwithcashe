@@ -1,4 +1,4 @@
-package workcashe
+package cash
 
 import (
 	"fmt"
@@ -23,10 +23,12 @@ type Cash struct {
 func NewCash(ttlMs uint32) *Cash {
 	hotels := make(map[uint32]Hotel, hotelsCount)
 
+	fmt.Println(hotels)
 	return &Cash{
 		Hotel: hotels,
 		TTL:   ttlMs,
 	}
+
 }
 
 func (c *Cash) GetHotelByID(id uint32) (Hotel, error) {

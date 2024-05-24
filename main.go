@@ -53,7 +53,7 @@ func main() {
 			fmt.Printf("Мы посчитали кол-во букв в слове --->%v<---. Ответ - %v \n", WordsforCheck, NoL)
 
 		} else {
-			fmt.Printf("Мы помним что тут ответ - %v \n", answer.NoW)
+			fmt.Printf("Мы помним что в слове -->%v<-- ответ - %v  \n", answer.Word, answer.NoW)
 
 		}
 

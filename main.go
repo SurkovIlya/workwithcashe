@@ -50,7 +50,7 @@ func main() {
 			if err != nil {
 				fmt.Println(err)
 			}
-			fmt.Printf("Мы посчитали кол-во букв. Ответ - %v \n", NoL)
+			fmt.Printf("Мы посчитали кол-во букв в слове --->%v<---. Ответ - %v \n", WordsforCheck, NoL)
 
 		} else {
 			fmt.Printf("Мы помним что тут ответ - %v \n", answer.NoW)

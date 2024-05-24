@@ -22,7 +22,7 @@ func main() {
 	var casheWord workcashe.Cashe
 	err = json.Unmarshal(casheFile, &casheWord)
 	if err != nil {
-		fmt.Println("Нет каша")
+		fmt.Println("Нет кэша")
 	}
 	cashe := workcashe.NewCash(ttlMs)
 

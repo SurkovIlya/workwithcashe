@@ -31,6 +31,7 @@ func NewCash(ttlMs uint32) *Cashe {
 func (c *Cashe) GetWordByID(word string) (Words, error) {
 	if wordValue, ok := c.Word[word]; ok {
 		wordValue.Lastusedgetime = time.Now()
+		c.Word[word] = wordValue
 		return wordValue, nil
 	} else {
 		return Words{}, fmt.Errorf("Asd")
